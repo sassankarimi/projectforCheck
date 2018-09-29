@@ -1,0 +1,21 @@
+Index: app/Listeners/EmailBanNotification.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/Listeners/EmailBanNotification.php	(revision 91abba6128cf03dd231709545b91ef6231fc3f61)
++++ app/Listeners/EmailBanNotification.php	(date 1536746535974)
+@@ -29,6 +29,13 @@
+     public function handle(UserWasBanned $event)
+     {
+         var_dump('notify'.$event->user->name.'they have been ...!');
++
++
+         //
++    }
++
++    public function test()
++    {
++        
+     }
+ }
